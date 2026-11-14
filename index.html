@@ -4,6 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>مصنع النهيم للصناعات | الموقع الرسمي</title>
 <meta name="description" content="مصنع النهيم للصناعات في المدينة الصناعية الثالثة بجدة، متخصص في تصنيع آلات إنتاج المنتجات البلاستيكية وتصنيع الآلات حسب الطلب وتوفير قطع الغيار.">
 
@@ -29,7 +30,6 @@ body{
 }
 
 .top{
-  height:auto;
   min-height:82px;
   padding:16px max(6vw,22px);
   display:flex;
@@ -136,17 +136,16 @@ h3{
   font-weight:700;
 }
 
-/* المربع الأزرق وشعار النهيم */
+/* مربع الشعار الرئيسي */
 .hero-art{
   height:370px;
   border-radius:24px;
   background:linear-gradient(140deg,#0e3452,#087eae);
-  position:relative;
-  overflow:hidden;
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:15px;
+  overflow:hidden;
+  padding:18px;
 }
 
 .hero-art img{
@@ -169,29 +168,87 @@ h3{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:18px;
-  margin:10px 0 80px;
+  margin:10px 0 55px;
 }
 
-.tiles article,
-.panel{
+.tiles article{
   padding:28px;
   border:1px solid #e3ebef;
   border-radius:14px;
   background:#fff;
 }
 
-.tiles b,
-.work-list>div>span{
+.tiles b{
   color:var(--blue);
   font-size:14px;
   font-weight:800;
 }
 
-.tiles p,
-.panel p,
-.work-list p{
+.tiles p{
   color:var(--muted);
   margin-bottom:0;
+}
+
+/* معرض الآلات والمعدات */
+.machines{
+  padding:20px 0 65px;
+}
+
+.machines-head{
+  text-align:center;
+  margin-bottom:28px;
+}
+
+.machines-head p{
+  color:var(--muted);
+}
+
+.machine-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.machine-card{
+  margin:0;
+  border:1px solid #e3ebef;
+  border-radius:16px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 5px 20px rgba(16,43,67,.06);
+}
+
+.machine-card img{
+  display:block;
+  width:100%;
+  aspect-ratio:3/2;
+  object-fit:contain;
+  background:#fff;
+}
+
+.machine-card figcaption{
+  padding:16px 18px;
+  text-align:center;
+  font-weight:700;
+  color:var(--navy);
+}
+
+/* التواصل */
+.contact{
+  background:var(--pale);
+  border-radius:18px;
+  padding:34px;
+  margin-bottom:65px;
+}
+
+.contact p{
+  color:var(--muted);
+}
+
+.contact a{
+  color:var(--blue);
+  text-decoration:none;
+  font-weight:700;
 }
 
 footer{
@@ -210,83 +267,19 @@ footer a{
   text-decoration:none;
 }
 
-.page-head{
-  padding:65px 0 42px;
-}
-
-.page-head h1{
-  font-size:52px;
-}
-
-.about-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:18px;
-}
-
-.panel{
-  padding:30px;
-}
-
-.panel.dark{
-  background:var(--navy);
-  color:white;
-}
-
-.panel.dark h2{
-  color:white;
-}
-
-.panel.dark p{
-  color:#d0e0e8;
-}
-
-.work{
-  padding:65px 0;
-}
-
-.work-list{
-  border-top:1px solid #e2eaee;
-}
-
-.work-list>div{
-  display:flex;
-  gap:24px;
-  padding:22px 4px;
-  border-bottom:1px solid #e2eaee;
-}
-
-.work-list>div>span{
-  padding-top:5px;
-}
-
-.work-list h3{
-  margin:0;
-}
-
-.contact{
-  background:var(--pale);
-  border-radius:18px;
-  padding:34px;
-  margin-bottom:65px;
-}
-
-.contact p{
-  color:var(--muted);
-}
-
 @media(max-width:720px){
+
   .hero{
     grid-template-columns:1fr;
     padding:45px 0;
   }
 
   .hero-art{
-    height:260px;
+    height:280px;
   }
 
   .tiles,
-  .about-grid{
+  .machine-grid{
     grid-template-columns:1fr;
   }
 
@@ -296,10 +289,6 @@ footer a{
 
   nav{
     gap:16px;
-  }
-
-  .page-head h1{
-    font-size:40px;
   }
 
   footer{
@@ -312,6 +301,7 @@ footer a{
 <body>
 
 <header class="top">
+
   <a class="brand" href="index.html">
     <img src="alnaheem-logo.png" alt="شعار النهيم">
     <span>شركة النهيم للصناعات</span>
@@ -321,73 +311,147 @@ footer a{
     <a class="active" href="index.html">الرئيسية</a>
     <a href="about.html">من نحن وأعمالنا</a>
   </nav>
+
 </header>
 
 <main>
 
-<section class="hero">
+  <!-- الواجهة الرئيسية -->
+  <section class="hero">
 
-  <div class="hero-copy">
-    <p class="eyebrow">شركة النهيم للصناعات</p>
+    <div class="hero-copy">
+      <p class="eyebrow">شركة النهيم للصناعات</p>
 
-    <h1>
-      حلول صناعية<br>
-      <em>تصنع الفرق</em>
-    </h1>
+      <h1>
+        حلول صناعية<br>
+        <em>تصنع الفرق</em>
+      </h1>
 
-    <p class="lead">
-      نصنع آلات إنتاج المنتجات البلاستيكية، ونطوّر المعدات الصناعية حسب احتياج عملائنا، ونوفر قطع الغيار لدعم استمرارية أعمالهم.
+      <p class="lead">
+        نصنع آلات إنتاج المنتجات البلاستيكية، ونطوّر المعدات الصناعية حسب احتياج عملائنا، ونوفر قطع الغيار لدعم استمرارية أعمالهم.
+      </p>
+
+      <a class="cta" href="about.html">اكتشف خدماتنا</a>
+    </div>
+
+    <div class="hero-art">
+      <img src="alnaheem-logo.png" alt="شعار شركة النهيم للصناعات">
+    </div>
+
+  </section>
+
+  <!-- التعريف بالمصنع -->
+  <section class="intro">
+
+    <p class="eyebrow">مرحباً بكم</p>
+
+    <h2>من الفكرة إلى خط الإنتاج</h2>
+
+    <p>
+      في مصنع النهيم للصناعات، نعمل على تقديم حلول تصنيع عملية تلبي متطلبات القطاع الصناعي، مع الاهتمام بالجودة والدقة وتفاصيل احتياج العميل.
     </p>
 
-    <a class="cta" href="about.html">اكتشف خدماتنا</a>
-  </div>
+  </section>
 
-  <div class="hero-art" aria-label="شعار مصنع النهيم">
-    <img
-      src="alnaheem-logo.png"
-      alt="شعار شركة النهيم للصناعات">
-  </div>
+  <!-- خدمات المصنع -->
+  <section class="tiles">
 
-</section>
+    <article>
+      <b>01</b>
+      <h3>تصنيع آلات البلاستيك</h3>
+      <p>آلات مخصصة لإنتاج المنتجات البلاستيكية.</p>
+    </article>
 
-<section class="intro">
-  <p class="eyebrow">مرحباً بكم</p>
+    <article>
+      <b>02</b>
+      <h3>التصنيع حسب الطلب</h3>
+      <p>تصميم وتصنيع الآلات والمعدات وفق متطلبات العميل.</p>
+    </article>
 
-  <h2>من الفكرة إلى خط الإنتاج</h2>
+    <article>
+      <b>03</b>
+      <h3>قطع الغيار</h3>
+      <p>توفير قطع غيار للآلات والمعدات الصناعية المتنوعة.</p>
+    </article>
 
-  <p>
-    في مصنع النهيم للصناعات، نعمل على تقديم حلول تصنيع عملية تلبي متطلبات القطاع الصناعي، مع الاهتمام بالجودة والدقة وتفاصيل احتياج العميل.
-  </p>
-</section>
+  </section>
 
-<section class="tiles">
+  <!-- صور الآلات والمعدات -->
+  <section class="machines">
 
-  <article>
-    <b>01</b>
-    <h3>تصنيع آلات البلاستيك</h3>
-    <p>آلات مخصصة لإنتاج المنتجات البلاستيكية.</p>
-  </article>
+    <div class="machines-head">
+      <p class="eyebrow">من أعمالنا</p>
+      <h2>الآلات والمعدات</h2>
+      <p>مجموعة من الآلات والمعدات الصناعية التي نقدمها لعملائنا.</p>
+    </div>
 
-  <article>
-    <b>02</b>
-    <h3>التصنيع حسب الطلب</h3>
-    <p>تصميم وتصنيع الآلات والمعدات وفق متطلبات العميل.</p>
-  </article>
+    <div class="machine-grid">
 
-  <article>
-    <b>03</b>
-    <h3>قطع الغيار</h3>
-    <p>توفير قطع غيار للآلات والمعدات الصناعية المتنوعة.</p>
-  </article>
+      <figure class="machine-card">
+        <img
+          src="machine-film-blowing.jpg"
+          alt="ماكينة إنتاج الأفلام البلاستيكية"
+          loading="lazy">
+        <figcaption>ماكينة إنتاج الأفلام البلاستيكية</figcaption>
+      </figure>
 
-</section>
+      <figure class="machine-card">
+        <img
+          src="machine-alnaheem.jpg"
+          alt="ماكينة من تصنيع النهيم"
+          loading="lazy">
+        <figcaption>ماكينة من تصنيع النهيم</figcaption>
+      </figure>
+
+      <figure class="machine-card">
+        <img
+          src="machine-injection-th650.jpg"
+          alt="ماكينة حقن البلاستيك TH650"
+          loading="lazy">
+        <figcaption>ماكينة حقن البلاستيك TH650</figcaption>
+      </figure>
+
+    </div>
+
+  </section>
+
+  <!-- التواصل -->
+  <section class="contact">
+
+    <h2>يسعدنا تواصلكم</h2>
+
+    <p>
+      للاستفسارات وطلبات تصنيع الآلات والمعدات، يسعدنا استقبال تواصلكم.
+    </p>
+
+    <p>
+      <strong>البريد الإلكتروني:</strong>
+      <a href="mailto:alnaheem2025@gmail.com">
+        alnaheem2025@gmail.com
+      </a>
+    </p>
+
+    <p>
+      <strong>الجوال:</strong>
+      <a href="tel:+966540303079" dir="ltr">
+        0540303079
+      </a>
+    </p>
+
+  </section>
 
 </main>
 
 <footer>
+
   <strong>شركة النهيم للصناعات</strong>
+
   <span>المدينة الصناعية الثالثة – جدة – المملكة العربية السعودية</span>
-  <a href="mailto:alnaheem2025@gmail.com">alnaheem2025@gmail.com</a>
+
+  <a href="mailto:alnaheem2025@gmail.com">
+    alnaheem2025@gmail.com
+  </a>
+
 </footer>
 
 </body>
