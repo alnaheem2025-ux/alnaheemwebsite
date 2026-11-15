@@ -1,386 +1,508 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>من نحن وأعمالنا | شركة النهيم للصناعة</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<title>من نحن وأعمالنا | مصنع النهيم للصناعات</title>
 
-    body {
-      font-family: Tahoma, Arial, sans-serif;
-      background: #f5f7fa;
-      color: #243447;
-      line-height: 1.9;
-    }
+<meta name="description" content="تعرف على مصنع النهيم للصناعات ورؤيته وخدماته في تصنيع آلات المنتجات البلاستيكية والآلات حسب الطلب وتوفير قطع الغيار.">
 
-    header {
-      background: #ffffff;
-      padding: 18px 6%;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-    }
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
 
-    .header-content {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 22px;
-      flex-wrap: wrap;
-    }
+:root {
+  --blue:#087eae;
+  --navy:#102b43;
+  --ink:#203344;
+  --muted:#637786;
+  --pale:#eef6f9;
+}
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+* {
+  box-sizing:border-box;
+}
 
-    .brand img {
-      width: 65px;
-      height: 65px;
-      object-fit: contain;
-    }
+body {
+  margin:0;
+  font-family:'Cairo',Tahoma,Arial,sans-serif;
+  color:var(--ink);
+  background:#fff;
+  line-height:1.9;
+}
 
-    .brand-name {
-      color: #123b59;
-      font-size: 21px;
-      font-weight: bold;
-    }
+.top {
+  min-height:82px;
+  padding:16px max(6vw,22px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid #e7edf0;
+  gap:20px;
+  flex-wrap:wrap;
+}
 
-    .country {
-      color: #123b59;
-      font-size: 15px;
-      font-weight: bold;
-      white-space: nowrap;
-    }
+.brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  color:var(--navy);
+  font-weight:800;
+}
 
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 22px;
-      flex-wrap: wrap;
-    }
+.brand img {
+  width:58px;
+  height:58px;
+  object-fit:contain;
+}
 
-    nav a {
-      color: #123b59;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 15px;
-    }
+nav {
+  display:flex;
+  gap:26px;
+  flex-wrap:wrap;
+}
 
-    nav a:hover {
-      color: #d49b36;
-    }
+nav a {
+  color:#526675;
+  text-decoration:none;
+  font-weight:700;
+  font-size:14px;
+}
 
-    .page-title {
-      text-align: center;
-      padding: 55px 20px 25px;
-    }
+nav a.active,
+nav a:hover {
+  color:var(--blue);
+}
 
-    .page-title h1 {
-      color: #123b59;
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
+main {
+  max-width:1180px;
+  margin:auto;
+  padding:0 24px;
+}
 
-    .page-title p {
-      color: #718096;
-      font-size: 16px;
-    }
+h1 {
+  font-size:clamp(38px,5vw,64px);
+  line-height:1.25;
+  color:var(--navy);
+  margin:0 0 20px;
+  font-weight:800;
+}
 
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 10px 22px 65px;
-    }
+h1 em {
+  font-style:normal;
+  color:var(--blue);
+}
 
-    .content-section {
-      background: #ffffff;
-      padding: 30px 34px;
-      margin: 22px 0;
-      border-radius: 15px;
-      box-shadow: 0 5px 20px rgba(18,59,89,0.06);
-      border-right: 5px solid #d49b36;
-    }
+h2 {
+  font-size:30px;
+  color:var(--navy);
+  margin:0 0 12px;
+}
 
-    .content-section h2 {
-      color: #123b59;
-      font-size: 25px;
-      margin-bottom: 12px;
-    }
+h3 {
+  font-size:19px;
+  color:var(--navy);
+  margin:8px 0;
+}
 
-    .content-section p {
-      font-size: 17px;
-      color: #526171;
-    }
+.eyebrow {
+  color:var(--blue);
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:.4px;
+  margin:0 0 10px;
+}
 
-    .vision {
-      background: #123b59;
-      border-right: 5px solid #d49b36;
-    }
+.lead {
+  font-size:18px;
+  color:var(--muted);
+  max-width:700px;
+  margin:0 0 28px;
+}
 
-    .vision h2,
-    .vision p {
-      color: #ffffff;
-    }
+.page-head {
+  padding:65px 0 42px;
+}
 
-    .mission {
-      background: #ffffff;
-      border-right: 5px solid #d49b36;
-    }
+.page-head h1 {
+  font-size:52px;
+}
 
-    .logo-section {
-      text-align: center;
-      padding: 22px 15px 28px;
-    }
+.about-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
 
-    .logo-section a {
-      display: inline-block;
-      cursor: pointer;
-    }
+.panel {
+  padding:30px;
+  border:1px solid #e3ebef;
+  border-radius:14px;
+  background:#fff;
+}
 
-    .logo-section img {
-      width: 190px;
-      max-width: 65%;
-      height: auto;
-      object-fit: contain;
-      transition: transform 0.2s ease;
-    }
+.panel.dark {
+  background:var(--navy);
+  color:white;
+}
 
-    .logo-section img:hover {
-      transform: scale(1.04);
-    }
+.panel.dark h2 {
+  color:white;
+}
 
-    .work-section h2 {
-      margin-bottom: 22px;
-    }
+.panel.dark p {
+  color:#d0e0e8;
+}
 
-    .work-item {
-      padding: 17px 20px;
-      margin: 14px 0;
-      background: #f5f7fa;
-      border-radius: 10px;
-      border-right: 4px solid #d49b36;
-    }
+.panel p {
+  color:var(--muted);
+  margin-bottom:0;
+}
 
-    .work-item h3 {
-      color: #123b59;
-      font-size: 19px;
-      margin-bottom: 5px;
-    }
+/* شعار النهيم تحت مربع الرؤية */
 
-    .work-item p {
-      font-size: 15px;
-    }
+.vision-logo {
+  grid-column:2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px 10px 30px;
+  min-height:230px;
+}
 
-    footer {
-      background: #102f49;
-      color: #ffffff;
-      padding: 35px 20px;
-      text-align: center;
-    }
+.vision-logo img {
+  display:block;
+  width:100%;
+  max-width:350px;
+  height:auto;
+  object-fit:contain;
+}
 
-    .footer-content {
-      max-width: 1100px;
-      margin: auto;
-    }
+.work {
+  padding:65px 0;
+}
 
-    footer h3 {
-      font-size: 21px;
-      margin-bottom: 15px;
-    }
+.work-list {
+  border-top:1px solid #e2eaee;
+}
 
-    footer p {
-      margin: 7px 0;
-      color: #e2eaf0;
-      font-size: 15px;
-    }
+.work-list>div {
+  display:flex;
+  gap:24px;
+  padding:22px 4px;
+  border-bottom:1px solid #e2eaee;
+}
 
-    footer a {
-      color: #ffffff;
-      text-decoration: none;
-    }
+.work-list>div>span {
+  padding-top:5px;
+  color:var(--blue);
+  font-size:14px;
+  font-weight:800;
+}
 
-    footer a:hover {
-      color: #e4b85d;
-    }
+.work-list h3 {
+  margin:0;
+}
 
-    .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.2);
-      margin-top: 22px;
-      padding-top: 15px;
-      font-size: 13px;
-      color: #cbd5df;
-    }
+.work-list p {
+  color:var(--muted);
+  margin-bottom:0;
+}
 
-    @media (max-width: 750px) {
-      .header-content {
-        justify-content: center;
-        text-align: center;
-      }
+/* الشريط الأزرق الغامق وبيانات التواصل */
 
-      .brand {
-        justify-content: center;
-        width: 100%;
-      }
+footer {
+  background:#102b43;
+  color:#dce9ef;
+  padding:32px max(6vw,22px);
+  font-size:14px;
+}
 
-      nav {
-        justify-content: center;
-        gap: 15px;
-      }
+.footer-inner {
+  max-width:1180px;
+  margin:auto;
+}
 
-      .country {
-        width: 100%;
-        text-align: center;
-      }
+.footer-title {
+  color:#fff;
+  font-size:21px;
+  font-weight:800;
+  margin-bottom:20px;
+}
 
-      .page-title h1 {
-        font-size: 28px;
-      }
+.footer-contact {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:13px;
+}
 
-      .content-section {
-        padding: 24px 20px;
-      }
-    }
-  </style>
+.footer-item {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:0;
+  padding:13px 16px;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:10px;
+  color:#dce9ef;
+  text-decoration:none;
+  overflow-wrap:anywhere;
+  transition:.2s ease;
+}
+
+.footer-item:hover {
+  background:rgba(255,255,255,.15);
+  border-color:#8bd7ec;
+  color:#8bd7ec;
+}
+
+.footer-icon {
+  width:38px;
+  height:38px;
+  flex:0 0 38px;
+  display:grid;
+  place-items:center;
+  background:rgba(255,255,255,.12);
+  border-radius:50%;
+  font-size:18px;
+}
+
+.footer-bottom {
+  border-top:1px solid rgba(255,255,255,.16);
+  margin-top:24px;
+  padding-top:17px;
+  color:#b8cbd6;
+  font-size:12px;
+}
+
+/* توافق التصميم مع الجوال */
+
+@media(max-width:720px) {
+
+  .about-grid {
+    grid-template-columns:1fr;
+  }
+
+  .vision-logo {
+    grid-column:1;
+    min-height:180px;
+  }
+
+  .vision-logo img {
+    max-width:280px;
+  }
+
+  nav {
+    gap:16px;
+  }
+
+  .page-head h1 {
+    font-size:40px;
+  }
+
+  .footer-contact {
+    grid-template-columns:1fr;
+  }
+
+  main {
+    padding:0 18px;
+  }
+}
+
+</style>
 </head>
 
 <body>
 
-  <header>
-    <div class="header-content">
+<header class="top">
 
-      <div class="brand">
-        <img src="alnaheem-logo.png"
-             alt="شعار شركة النهيم للصناعة">
-        <div class="brand-name">شركة النهيم للصناعة</div>
-      </div>
+  <a class="brand" href="index.html">
+    <img src="alnaheem-logo.png" alt="شعار النهيم">
+    <span>شركة النهيم للصناعات</span>
+  </a>
 
-      <div class="country">🇸🇦 المملكة العربية السعودية</div>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a class="active" href="about.html">من نحن وأعمالنا</a>
+  </nav>
 
-      <nav>
-        <a href="index.html">الرئيسية</a>
-        <a href="about.html">من نحن وأعمالنا</a>
-      </nav>
+</header>
+
+<main>
+
+  <section class="page-head">
+
+    <p class="eyebrow">نبذة عن المصنع</p>
+
+    <h1>من نحن <em>وأعمالنا</em></h1>
+
+    <p class="lead">
+      شريك صناعي يركز على الحلول العملية، والتصنيع وفق احتياجات العملاء.
+    </p>
+
+  </section>
+
+  <section class="about-grid">
+
+    <article class="panel">
+
+      <h2>من نحن</h2>
+
+      <p>
+        مصنع النهيم للصناعات منشأة صناعية تقع في المدينة الصناعية الثالثة بمدينة جدة في المملكة العربية السعودية. نعمل في مجال تصنيع آلات إنتاج المنتجات البلاستيكية، وتصنيع الآلات والمعدات وفق طلب العميل، إلى جانب توفير قطع الغيار للآلات والمعدات المتنوعة.
+      </p>
+
+    </article>
+
+    <article class="panel dark">
+
+      <h2>رؤيتنا</h2>
+
+      <p>
+        أن نكون خياراً موثوقاً في تقديم حلول تصنيع الآلات والمعدات الصناعية، من خلال التطوير المستمر وفهم احتياجات السوق والعملاء.
+      </p>
+
+    </article>
+
+    <!-- شعار النهيم تحت مربع رؤيتنا -->
+
+    <div class="vision-logo">
+
+      <img
+        src="alnaheem-logo.png"
+        alt="شعار شركة النهيم للصناعات">
 
     </div>
-  </header>
 
-  <div class="page-title">
-    <h1>من نحن وأعمالنا</h1>
-    <p>نتطلع إلى تقديم حلول صناعية تلبي احتياجات عملائنا</p>
+    <article class="panel">
+
+      <h2>رسالتنا</h2>
+
+      <p>
+        تقديم حلول صناعية مصممة بعناية، تجمع بين جودة التصنيع والاهتمام بالتفاصيل والاستجابة لمتطلبات العملاء.
+      </p>
+
+    </article>
+
+  </section>
+
+  <section class="work">
+
+    <p class="eyebrow">مجالات العمل</p>
+
+    <h2>ماذا نقدم؟</h2>
+
+    <div class="work-list">
+
+      <div>
+        <span>01</span>
+        <section>
+          <h3>تصنيع آلات إنتاج المنتجات البلاستيكية</h3>
+          <p>
+            تجهيز وتصنيع آلات تخدم عمليات إنتاج المنتجات البلاستيكية.
+          </p>
+        </section>
+      </div>
+
+      <div>
+        <span>02</span>
+        <section>
+          <h3>تصنيع الآلات حسب طلب العميل</h3>
+          <p>
+            تنفيذ حلول ومعدات صناعية بناءً على المواصفات والاحتياجات التشغيلية التي يحددها العميل.
+          </p>
+        </section>
+      </div>
+
+      <div>
+        <span>03</span>
+        <section>
+          <h3>توفير قطع الغيار</h3>
+          <p>
+            توفير قطع غيار للآلات والمعدات المتنوعة للمساعدة في دعم التشغيل والصيانة.
+          </p>
+        </section>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<!-- بيانات التواصل في الشريط الأزرق السفلي فقط -->
+
+<footer>
+
+  <div class="footer-inner">
+
+    <div class="footer-title">
+      شركة النهيم للصناعات
+    </div>
+
+    <div class="footer-contact">
+
+      <a class="footer-item"
+         href="mailto:alnaheem2025@gmail.com">
+
+        <span class="footer-icon">✉</span>
+
+        <span>
+          البريد الإلكتروني:
+          alnaheem2025@gmail.com
+        </span>
+
+      </a>
+
+      <a class="footer-item"
+         href="mailto:Hisham@alkenana1.com">
+
+        <span class="footer-icon">✉</span>
+
+        <span>
+          البريد الإلكتروني الإضافي:
+          Hisham@alkenana1.com
+        </span>
+
+      </a>
+
+      <a class="footer-item"
+         href="tel:+966540303079">
+
+        <span class="footer-icon">☎</span>
+
+        <span>
+          الجوال: 0540303079
+        </span>
+
+      </a>
+
+      <a class="footer-item"
+         href="https://maps.app.goo.gl/EwoCejAxH2yB25rX9"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <span class="footer-icon">📍</span>
+
+        <span>
+          موقع المصنع:
+          المدينة الصناعية الثالثة – جدة – المملكة العربية السعودية
+        </span>
+
+      </a>
+
+    </div>
+
+    <div class="footer-bottom">
+      جميع الحقوق محفوظة © شركة النهيم للصناعات
+    </div>
+
   </div>
 
-  <main>
-
-    <!-- من نحن -->
-    <section class="content-section">
-      <h2>من نحن</h2>
-      <p>
-        شركة النهيم للصناعة منشأة صناعية تقع في المدينة الصناعية الثالثة
-        بمدينة جدة في المملكة العربية السعودية. نعمل في مجال تصنيع آلات
-        إنتاج المنتجات البلاستيكية، وتصنيع الآلات والمعدات وفق طلب العميل،
-        إلى جانب توفير قطع الغيار للآلات والمعدات المتنوعة.
-      </p>
-    </section>
-
-    <!-- رؤيتنا -->
-    <section class="content-section vision">
-      <h2>رؤيتنا</h2>
-      <p>
-        أن نكون خياراً موثوقاً في تقديم حلول تصنيع الآلات والمعدات الصناعية،
-        من خلال التطوير المستمر وفهم احتياجات السوق والعملاء.
-      </p>
-    </section>
-
-    <!-- رسالتنا -->
-    <section class="content-section mission">
-      <h2>رسالتنا</h2>
-      <p>
-        تقديم حلول صناعية مصممة بعناية، تجمع بين جودة التصنيع والاهتمام
-        بالتفاصيل والاستجابة لمتطلبات العملاء.
-      </p>
-    </section>
-
-    <!-- شعار النهيم: الضغط عليه يفتح صورة الشعار -->
-    <div class="logo-section">
-      <a href="alnaheem-logo.png" target="_blank"
-         aria-label="عرض صورة شعار شركة النهيم للصناعة">
-        <img src="alnaheem-logo.png"
-             alt="شعار شركة النهيم للصناعة">
-      </a>
-    </div>
-
-    <!-- مجالات العمل -->
-    <section class="content-section work-section">
-      <h2>مجالات العمل</h2>
-
-      <div class="work-item">
-        <h3>01 - تصنيع آلات إنتاج المنتجات البلاستيكية</h3>
-        <p>
-          تجهيز وتصنيع آلات تخدم عمليات إنتاج المنتجات البلاستيكية.
-        </p>
-      </div>
-
-      <div class="work-item">
-        <h3>02 - تصنيع الآلات حسب طلب العميل</h3>
-        <p>
-          تنفيذ حلول ومعدات صناعية بناءً على المواصفات والاحتياجات
-          التشغيلية التي يحددها العميل.
-        </p>
-      </div>
-
-      <div class="work-item">
-        <h3>03 - توفير قطع الغيار</h3>
-        <p>
-          توفير قطع غيار للآلات والمعدات المتنوعة للمساعدة في دعم
-          التشغيل والصيانة.
-        </p>
-      </div>
-
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="footer-content">
-      <h3>شركة النهيم للصناعة</h3>
-
-      <p>
-        البريد الإلكتروني:
-        <a href="mailto:alnaheem2025@gmail.com">alnaheem2025@gmail.com</a>
-      </p>
-
-      <p>
-        بريد التواصل:
-        <a href="mailto:Hisham@alkenana1.com">Hisham@alkenana1.com</a>
-      </p>
-
-      <p>
-        الجوال:
-        <a href="tel:+966540303079">0540303079</a>
-      </p>
-
-      <p>
-        الموقع:
-        <a href="https://maps.app.goo.gl/EwoCejAxH2yB25rX9"
-           target="_blank" rel="noopener">
-          المدينة الصناعية الثالثة - جدة
-        </a>
-      </p>
-
-      <div class="footer-bottom">
-        © شركة النهيم للصناعة - جميع الحقوق محفوظة
-      </div>
-    </div>
-  </footer>
+</footer>
 
 </body>
 </html>
