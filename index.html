@@ -1,281 +1,335 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>مصنع النهيم للصناعات | الموقع الرسمي</title>
-<meta name="description" content="مصنع النهيم للصناعات في المدينة الصناعية الثالثة بجدة، متخصص في تصنيع آلات إنتاج المنتجات البلاستيكية وتصنيع الآلات حسب الطلب وتوفير قطع الغيار.">
+<title>شركة النهيم للصناعات | الموقع الرسمي</title>
+
+<meta name="description" content="شركة النهيم للصناعات في المدينة الصناعية الثالثة بجدة. تصنيع آلات المنتجات البلاستيكية، وتصنيع المعدات حسب الطلب، وتوفير قطع الغيار.">
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
 
-:root{
-  --blue:#087eae;
-  --navy:#102b43;
-  --ink:#203344;
-  --muted:#637786;
-  --pale:#eef6f9;
+:root {
+  --blue: #087eae;
+  --navy: #102b43;
+  --ink: #203344;
+  --muted: #637786;
+  --pale: #eef6f9;
 }
 
-*{box-sizing:border-box}
-
-body{
-  margin:0;
-  font-family:'Cairo',Tahoma,Arial,sans-serif;
-  color:var(--ink);
-  background:#fff;
-  line-height:1.9;
+* {
+  box-sizing: border-box;
 }
 
-.top{
-  min-height:82px;
-  padding:16px max(6vw,22px);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  border-bottom:1px solid #e7edf0;
-  gap:20px;
-  flex-wrap:wrap;
+html {
+  scroll-behavior: smooth;
 }
 
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  text-decoration:none;
-  color:var(--navy);
-  font-weight:800;
+body {
+  margin: 0;
+  font-family: 'Cairo', Tahoma, Arial, sans-serif;
+  color: var(--ink);
+  background: #fff;
+  line-height: 1.9;
 }
 
-.brand img{
-  width:58px;
-  height:58px;
-  object-fit:contain;
+a {
+  transition: .2s ease;
 }
 
-nav{
-  display:flex;
-  gap:26px;
+.top {
+  min-height: 82px;
+  padding: 14px max(6vw, 22px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7edf0;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-nav a{
-  color:#526675;
-  text-decoration:none;
-  font-weight:700;
-  font-size:14px;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--navy);
+  font-weight: 800;
 }
 
-nav a.active,
-nav a:hover{
-  color:var(--blue);
+.brand img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
 }
 
-main{
-  max-width:1180px;
-  margin:auto;
-  padding:0 24px;
+nav {
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
 }
 
-.hero{
-  display:grid;
-  grid-template-columns:1.05fr .95fr;
-  align-items:center;
-  gap:50px;
-  padding:78px 0 70px;
+nav a {
+  color: #526675;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
 }
 
-.eyebrow{
-  color:var(--blue);
-  font-size:13px;
-  font-weight:800;
-  letter-spacing:.4px;
-  margin:0 0 10px;
+nav a:hover {
+  color: var(--blue);
 }
 
-h1{
-  font-size:clamp(38px,5vw,64px);
-  line-height:1.25;
-  color:var(--navy);
-  margin:0 0 20px;
-  font-weight:800;
+main {
+  max-width: 1180px;
+  margin: auto;
+  padding: 0 24px;
 }
 
-h1 em{
-  font-style:normal;
-  color:var(--blue);
+.hero {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  align-items: center;
+  gap: 50px;
+  padding: 78px 0 70px;
 }
 
-h2{
-  font-size:30px;
-  color:var(--navy);
-  margin:0 0 12px;
+.eyebrow {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 800;
+  margin: 0 0 10px;
 }
 
-h3{
-  font-size:19px;
-  color:var(--navy);
-  margin:8px 0;
+h1 {
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 1.25;
+  color: var(--navy);
+  margin: 0 0 20px;
+  font-weight: 800;
 }
 
-.lead{
-  font-size:18px;
-  color:var(--muted);
-  max-width:600px;
-  margin:0 0 28px;
+h1 em {
+  font-style: normal;
+  color: var(--blue);
 }
 
-.cta{
-  display:inline-block;
-  background:var(--blue);
-  color:#fff;
-  text-decoration:none;
-  padding:11px 25px;
-  border-radius:7px;
-  font-weight:700;
+h2 {
+  font-size: 30px;
+  color: var(--navy);
+  margin: 0 0 12px;
 }
 
-/* مربع شعار النهيم */
-.hero-art{
-  height:370px;
-  border-radius:24px;
-  background:linear-gradient(140deg,#0e3452,#087eae);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
-  padding:18px;
+h3 {
+  font-size: 19px;
+  color: var(--navy);
+  margin: 8px 0;
 }
 
-.hero-art img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  display:block;
+.lead {
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 0 28px;
 }
 
-.intro{
-  text-align:center;
-  padding:35px 12% 45px;
+.cta {
+  display: inline-block;
+  background: var(--blue);
+  color: #fff;
+  text-decoration: none;
+  padding: 11px 25px;
+  border-radius: 7px;
+  font-weight: 700;
 }
 
-.intro p:last-child{
-  color:var(--muted);
+.cta:hover {
+  background: var(--navy);
 }
 
-.tiles{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-  margin:10px 0 55px;
+.hero-art {
+  height: 370px;
+  border-radius: 24px;
+  background: linear-gradient(140deg, #0e3452, #087eae);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 18px;
 }
 
-.tiles article{
-  padding:28px;
-  border:1px solid #e3ebef;
-  border-radius:14px;
-  background:#fff;
+.hero-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
-.tiles b{
-  color:var(--blue);
-  font-size:14px;
-  font-weight:800;
+.intro {
+  text-align: center;
+  padding: 35px 12% 45px;
 }
 
-.tiles p{
-  color:var(--muted);
-  margin-bottom:0;
+.intro p:last-child {
+  color: var(--muted);
 }
 
-/* صور الآلات والمعدات بدون أي كتابة */
-.machines{
-  padding:20px 0 65px;
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 10px 0 55px;
 }
 
-.machine-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
+.tiles article {
+  padding: 28px;
+  border: 1px solid #e3ebef;
+  border-radius: 14px;
+  background: #fff;
 }
 
-.machine-card{
-  margin:0;
-  border:1px solid #e3ebef;
-  border-radius:16px;
-  overflow:hidden;
-  background:#fff;
-  box-shadow:0 5px 20px rgba(16,43,67,.06);
+.tiles b {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 800;
 }
 
-.machine-card img{
-  display:block;
-  width:100%;
-  aspect-ratio:3/2;
-  object-fit:contain;
-  background:#fff;
+.tiles p {
+  color: var(--muted);
+  margin-bottom: 0;
 }
 
-/* قسم التواصل */
-.contact{
-  background:var(--pale);
-  border-radius:18px;
-  padding:34px;
-  margin-bottom:65px;
+/* صور الآلات */
+
+.machines {
+  padding: 20px 0 65px;
 }
 
-.contact p{
-  color:var(--muted);
+.machine-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
 }
 
-.contact a{
-  color:var(--blue);
-  text-decoration:none;
-  font-weight:700;
+.machine-card {
+  margin: 0;
+  border: 1px solid #e3ebef;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 5px 18px #102b4310;
 }
 
-footer{
-  background:#102b43;
-  color:#dce9ef;
-  padding:28px max(6vw,22px);
-  display:flex;
-  justify-content:space-between;
-  gap:14px;
-  flex-wrap:wrap;
-  font-size:13px;
+.machine-card img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  background: #fff;
+  display: block;
 }
 
-footer a{
-  color:#8bd7ec;
-  text-decoration:none;
+/* التواصل */
+
+.contact {
+  background: var(--pale);
+  border-radius: 18px;
+  padding: 34px;
+  margin-bottom: 65px;
 }
 
-@media(max-width:720px){
-  .hero{
-    grid-template-columns:1fr;
-    padding:45px 0;
+.contact-intro {
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+
+.contact-list {
+  display: grid;
+  gap: 14px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  background: #fff;
+  border: 1px solid #e0ebf0;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--navy);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.contact-item:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+  transform: translateY(-2px);
+}
+
+.contact-icon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  display: grid;
+  place-items: center;
+  background: var(--pale);
+  border-radius: 50%;
+  color: var(--blue);
+  font-size: 18px;
+}
+
+footer {
+  background: var(--navy);
+  color: #dce9ef;
+  padding: 28px max(6vw, 22px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+footer a {
+  color: #8bd7ec;
+  text-decoration: none;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 45px 0;
+    gap: 28px;
   }
 
-  .hero-art{
-    height:280px;
+  .hero-art {
+    height: 260px;
   }
 
   .tiles,
-  .machine-grid{
-    grid-template-columns:1fr;
+  .machine-grid {
+    grid-template-columns: 1fr;
   }
 
-  .intro{
-    padding:20px 0 35px;
+  .intro {
+    padding: 20px 0 35px;
   }
 
-  nav{
-    gap:16px;
+  nav {
+    gap: 16px;
   }
 
-  footer{
-    flex-direction:column;
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact {
+    padding: 22px;
   }
 }
 </style>
@@ -284,22 +338,21 @@ footer a{
 <body>
 
 <header class="top">
-
   <a class="brand" href="index.html">
-    <img src="alnaheem-logo.png" alt="شعار النهيم">
+    <img src="alnaheem-logo.png" alt="شعار شركة النهيم للصناعات">
     <span>شركة النهيم للصناعات</span>
   </a>
 
   <nav>
-    <a class="active" href="index.html">الرئيسية</a>
+    <a href="index.html">الرئيسية</a>
     <a href="about.html">من نحن وأعمالنا</a>
   </nav>
-
 </header>
 
 <main>
 
   <!-- الواجهة الرئيسية -->
+
   <section class="hero">
 
     <div class="hero-copy">
@@ -318,25 +371,27 @@ footer a{
     </div>
 
     <div class="hero-art">
-      <img src="alnaheem-logo.png" alt="شعار شركة النهيم للصناعات">
+      <img
+        src="alnaheem-logo.png"
+        alt="شعار شركة النهيم للصناعات">
     </div>
 
   </section>
 
-  <!-- التعريف بالمصنع -->
-  <section class="intro">
+  <!-- نبذة عن المصنع -->
 
+  <section class="intro">
     <p class="eyebrow">مرحباً بكم</p>
 
     <h2>من الفكرة إلى خط الإنتاج</h2>
 
     <p>
-      في مصنع النهيم للصناعات، نعمل على تقديم حلول تصنيع عملية تلبي متطلبات القطاع الصناعي، مع الاهتمام بالجودة والدقة وتفاصيل احتياج العميل.
+      في شركة النهيم للصناعات، نعمل على تقديم حلول تصنيع عملية تلبي متطلبات القطاع الصناعي، مع الاهتمام بالجودة والدقة وتفاصيل احتياج العميل.
     </p>
-
   </section>
 
   <!-- خدمات المصنع -->
+
   <section class="tiles">
 
     <article>
@@ -359,58 +414,75 @@ footer a{
 
   </section>
 
-  <!-- صور الآلات الثلاث فقط -->
+  <!-- صور الآلات -->
+
   <section class="machines">
 
     <div class="machine-grid">
 
       <figure class="machine-card">
-        <img
-          src="machine-film-blowing.jpg"
-          alt=""
-          loading="lazy">
+        <img src="machine-film-blowing.jpg"
+             alt="آلة صناعية"
+             loading="lazy">
       </figure>
 
       <figure class="machine-card">
-        <img
-          src="machine-alnaheem.jpg"
-          alt=""
-          loading="lazy">
+        <img src="machine-alnaheem.jpg"
+             alt="معدات شركة النهيم"
+             loading="lazy">
       </figure>
 
       <figure class="machine-card">
-        <img
-          src="machine-injection-th650.jpg"
-          alt=""
-          loading="lazy">
+        <img src="machine-injection-th650.jpg"
+             alt="آلة حقن بلاستيك"
+             loading="lazy">
       </figure>
 
     </div>
 
   </section>
 
-  <!-- التواصل -->
-  <section class="contact">
+  <!-- بيانات التواصل والموقع -->
+
+  <section class="contact" id="contact">
+
+    <p class="eyebrow">تواصل معنا</p>
 
     <h2>يسعدنا تواصلكم</h2>
 
-    <p>
-      للاستفسارات وطلبات تصنيع الآلات والمعدات، يسعدنا استقبال تواصلكم.
+    <p class="contact-intro">
+      للاستفسارات وطلبات التصنيع والخدمات الصناعية، يسعد فريقنا بخدمتكم.
     </p>
 
-    <p>
-      <strong>البريد الإلكتروني:</strong>
-      <a href="mailto:alnaheem2025@gmail.com">
-        alnaheem2025@gmail.com
-      </a>
-    </p>
+    <div class="contact-list">
 
-    <p>
-      <strong>الجوال:</strong>
-      <a href="tel:+966540303079" dir="ltr">
-        0540303079
+      <a class="contact-item"
+         href="mailto:Hisham@alkenana1.com">
+        <span class="contact-icon">✉</span>
+        <span>Hisham@alkenana1.com</span>
       </a>
-    </p>
+
+      <a class="contact-item"
+         href="mailto:alnaheem2025@gmail.com">
+        <span class="contact-icon">✉</span>
+        <span>alnaheem2025@gmail.com</span>
+      </a>
+
+      <a class="contact-item"
+         href="tel:+966540303079">
+        <span class="contact-icon">☎</span>
+        <span>0540303079</span>
+      </a>
+
+      <a class="contact-item"
+         href="https://maps.app.goo.gl/EwoCejAxH2yB25rX9"
+         target="_blank"
+         rel="noopener noreferrer">
+        <span class="contact-icon">📍</span>
+        <span>المدينة الصناعية الثالثة – جدة – المملكة العربية السعودية</span>
+      </a>
+
+    </div>
 
   </section>
 
@@ -420,10 +492,16 @@ footer a{
 
   <strong>شركة النهيم للصناعات</strong>
 
-  <span>المدينة الصناعية الثالثة – جدة – المملكة العربية السعودية</span>
+  <span>
+    المدينة الصناعية الثالثة – جدة – المملكة العربية السعودية
+  </span>
 
-  <a href="mailto:alnaheem2025@gmail.com">
-    alnaheem2025@gmail.com
+  <a href="mailto:Hisham@alkenana1.com">
+    Hisham@alkenana1.com
+  </a>
+
+  <a href="tel:+966540303079">
+    0540303079
   </a>
 
 </footer>
