@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>من نحن وأعمالنا | شركة النهيم للصناعات</title>
+  <title>من نحن وأعمالنا | شركة النهيم للصناعة</title>
 
   <style>
     * {
@@ -141,11 +141,21 @@
       padding: 22px 15px 28px;
     }
 
+    .logo-section a {
+      display: inline-block;
+      cursor: pointer;
+    }
+
     .logo-section img {
       width: 190px;
       max-width: 65%;
       height: auto;
       object-fit: contain;
+      transition: transform 0.2s ease;
+    }
+
+    .logo-section img:hover {
+      transform: scale(1.04);
     }
 
     .work-section h2 {
@@ -248,8 +258,9 @@
     <div class="header-content">
 
       <div class="brand">
-        <img src="alnaheem-logo.png" alt="شعار النهيم">
-        <div class="brand-name">شركة النهيم للصناعات</div>
+        <img src="alnaheem-logo.png"
+             alt="شعار شركة النهيم للصناعة">
+        <div class="brand-name">شركة النهيم للصناعة</div>
       </div>
 
       <div class="country">🇸🇦 المملكة العربية السعودية</div>
@@ -273,7 +284,7 @@
     <section class="content-section">
       <h2>من نحن</h2>
       <p>
-        مصنع النهيم للصناعات منشأة صناعية تقع في المدينة الصناعية الثالثة
+        شركة النهيم للصناعة منشأة صناعية تقع في المدينة الصناعية الثالثة
         بمدينة جدة في المملكة العربية السعودية. نعمل في مجال تصنيع آلات
         إنتاج المنتجات البلاستيكية، وتصنيع الآلات والمعدات وفق طلب العميل،
         إلى جانب توفير قطع الغيار للآلات والمعدات المتنوعة.
@@ -298,9 +309,13 @@
       </p>
     </section>
 
-    <!-- شعار النهيم -->
+    <!-- شعار النهيم: الضغط عليه يفتح صورة الشعار -->
     <div class="logo-section">
-      <img src="alnaheem-logo.png" alt="شعار شركة النهيم للصناعات">
+      <a href="alnaheem-logo.png" target="_blank"
+         aria-label="عرض صورة شعار شركة النهيم للصناعة">
+        <img src="alnaheem-logo.png"
+             alt="شعار شركة النهيم للصناعة">
+      </a>
     </div>
 
     <!-- مجالات العمل -->
@@ -336,7 +351,7 @@
 
   <footer>
     <div class="footer-content">
-      <h3>شركة النهيم للصناعات</h3>
+      <h3>شركة النهيم للصناعة</h3>
 
       <p>
         البريد الإلكتروني:
@@ -355,13 +370,14 @@
 
       <p>
         الموقع:
-        <a href="https://maps.app.goo.gl/EwoCejAxH2yB25rX9" target="_blank" rel="noopener">
+        <a href="https://maps.app.goo.gl/EwoCejAxH2yB25rX9"
+           target="_blank" rel="noopener">
           المدينة الصناعية الثالثة - جدة
         </a>
       </p>
 
       <div class="footer-bottom">
-        © شركة النهيم للصناعات - جميع الحقوق محفوظة
+        © شركة النهيم للصناعة - جميع الحقوق محفوظة
       </div>
     </div>
   </footer>
