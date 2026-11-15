@@ -5,8 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>شركة النهيم للصناعات | الموقع الرسمي</title>
-<meta name="description" content="شركة النهيم للصناعات في جدة، تصنيع آلات المنتجات البلاستيكية والآلات حسب الطلب وتوفير قطع الغيار.">
+<title>شركة النهيم للصناعة | الموقع الرسمي</title>
+<meta name="description" content="شركة النهيم للصناعة في جدة، تصنيع آلات المنتجات البلاستيكية والآلات حسب الطلب وتوفير قطع الغيار.">
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
@@ -40,7 +40,6 @@ a {
 }
 
 /* الشريط العلوي */
-
 .top {
   min-height:82px;
   padding:14px max(6vw,22px);
@@ -85,7 +84,6 @@ nav a:hover {
 }
 
 /* المملكة والعلم */
-
 .country {
   display:flex;
   align-items:center;
@@ -103,7 +101,6 @@ nav a:hover {
 }
 
 /* المحتوى الرئيسي */
-
 main {
   max-width:1180px;
   margin:auto;
@@ -182,6 +179,12 @@ h3 {
   padding:18px;
 }
 
+.hero-art a {
+  display:block;
+  width:100%;
+  height:100%;
+}
+
 .hero-art img {
   width:100%;
   height:100%;
@@ -190,7 +193,6 @@ h3 {
 }
 
 /* نبذة المصنع */
-
 .intro {
   text-align:center;
   padding:35px 12% 45px;
@@ -201,7 +203,6 @@ h3 {
 }
 
 /* الخدمات */
-
 .tiles {
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -228,7 +229,6 @@ h3 {
 }
 
 /* صور الآلات */
-
 .machines {
   padding:20px 0 65px;
 }
@@ -257,7 +257,6 @@ h3 {
 }
 
 /* التواصل */
-
 .contact {
   background:var(--pale);
   border-radius:18px;
@@ -308,7 +307,6 @@ h3 {
 }
 
 /* الشريط الأزرق السفلي */
-
 footer {
   background:var(--navy);
   color:#dce9ef;
@@ -332,8 +330,7 @@ footer {
   align-items:center;
 }
 
-/* الشعار الرسمي من مصدره */
-
+/* شعار صنع في السعودية */
 .saudi-made-logo {
   display:block;
   width:190px;
@@ -354,7 +351,6 @@ footer {
 }
 
 /* الجوال */
-
 @media(max-width:720px) {
 
   .top {
@@ -424,20 +420,22 @@ footer {
     height:44px;
   }
 }
-
 </style>
 </head>
 
 <body>
 
 <!-- الشريط العلوي -->
-
 <header class="top">
 
-  <a class="brand" href="index.html">
+  <!-- شعار الشركة: الضغط عليه يفتح صورة الشعار -->
+  <a class="brand"
+     href="alnaheem-logo.png"
+     target="_blank"
+     rel="noopener">
     <img src="alnaheem-logo.png"
-         alt="شعار شركة النهيم للصناعات">
-    <span>شركة النهيم للصناعات</span>
+         alt="شعار شركة النهيم للصناعة">
+    <span>شركة النهيم للصناعة</span>
   </a>
 
   <div class="country">
@@ -455,12 +453,11 @@ footer {
 <main>
 
   <!-- الواجهة الرئيسية -->
-
   <section class="hero">
 
     <div class="hero-copy">
 
-      <p class="eyebrow">شركة النهيم للصناعات</p>
+      <p class="eyebrow">شركة النهيم للصناعة</p>
 
       <h1>
         حلول صناعية<br>
@@ -477,29 +474,32 @@ footer {
 
     </div>
 
+    <!-- الضغط على الشعار الكبير يفتح صورة الشعار -->
     <div class="hero-art">
-      <img src="alnaheem-logo.png"
-           alt="شعار شركة النهيم للصناعات">
+      <a href="alnaheem-logo.png"
+         target="_blank"
+         rel="noopener"
+         aria-label="فتح صورة شعار النهيم">
+        <img src="alnaheem-logo.png"
+             alt="شعار شركة النهيم للصناعة">
+      </a>
     </div>
 
   </section>
 
   <!-- نبذة عن المصنع -->
-
   <section class="intro">
 
     <p class="eyebrow">مرحباً بكم</p>
-
     <h2>من الفكرة إلى خط الإنتاج</h2>
 
     <p>
-      في شركة النهيم للصناعات، نعمل على تقديم حلول تصنيع عملية تلبي متطلبات القطاع الصناعي، مع الاهتمام بالجودة والدقة وتفاصيل احتياج العميل.
+      في شركة النهيم للصناعة، نعمل على تقديم حلول تصنيع عملية تلبي متطلبات القطاع الصناعي، مع الاهتمام بالجودة والدقة وتفاصيل احتياج العميل.
     </p>
 
   </section>
 
   <!-- خدمات المصنع -->
-
   <section class="tiles">
 
     <article>
@@ -523,7 +523,6 @@ footer {
   </section>
 
   <!-- صور الآلات -->
-
   <section class="machines">
 
     <div class="machine-grid">
@@ -551,7 +550,6 @@ footer {
   </section>
 
   <!-- بيانات التواصل -->
-
   <section class="contact" id="contact">
 
     <p class="eyebrow">تواصل معنا</p>
@@ -597,23 +595,19 @@ footer {
 </main>
 
 <!-- الشريط الأزرق السفلي -->
-
 <footer>
 
   <div class="footer-company">
-    شركة النهيم للصناعات
+    شركة النهيم للصناعة
   </div>
 
   <!-- شعار صنع في السعودية الرسمي -->
-
   <div class="footer-address">
-
     <img
       class="saudi-made-logo"
       src="https://api.saudimade.sa/uploads/logo_arabic_6870c33199.svg"
       alt="الشعار الرسمي صنع في السعودية"
       loading="eager">
-
   </div>
 
   <a class="footer-email"
